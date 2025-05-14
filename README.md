@@ -23,7 +23,7 @@ Este proyecto permite consultar correos electronicos de una cuenta corporativa d
 - Token de acceso se genera automaticamente con WebClient
 - Consulta segura a Graph API con Bearer Token
 - Logging estructurado y trazable
-- Compatible con producci贸n y desarrollo
+- Compatible con produccion y desarrollo
 
 ---
 

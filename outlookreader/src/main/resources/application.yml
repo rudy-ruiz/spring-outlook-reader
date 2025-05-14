@@ -1,0 +1,30 @@
+server:
+  port: 9060
+
+spring:
+  application:
+    name: outlookreader
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bope_es
+    username: postgres
+    password: 1234567890
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          graph:
+            client-id: YOUR_CLIENT_ID
+            client-secret: YOUR_CLIENT_SECRET
+            authorization-grant-type: client_credentials
+            scope: https://graph.microsoft.com/.default
+
+        provider:
+          graph:
+            token-uri: https://login.microsoftonline.com/YOUR_TENANT_ID/oauth2/v2.0/token

@@ -12,7 +12,6 @@ public class GraphApiConfig {
 
     @Bean
     public WebClient webClient() {
-         log.info("SLF4J: webClient inicializado");
-        return WebClient.builder().build(); // sin baseUrl
+        return WebClient.builder().build();
     }
 }
